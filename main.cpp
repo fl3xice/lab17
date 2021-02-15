@@ -33,6 +33,7 @@ int main() {
     setlocale(LC_ALL, "");
     question("Введите размер матрицы", N);
     Matrix matrix(N);
+    // Конструктор копирования
     Matrix matrix2(matrix);
 
     question("Чем заполнить первую матрицу?", M);
@@ -59,7 +60,6 @@ int main() {
             question("Введите число на которое нужно умножить матрицу", nx);
             matrix *= nx;
         }
-
     }
 
     cout << "Результат: " << endl;
